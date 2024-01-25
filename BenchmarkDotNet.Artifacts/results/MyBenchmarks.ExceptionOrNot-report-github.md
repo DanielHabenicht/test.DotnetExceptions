@@ -1,5 +1,13 @@
-# test.DotnetExceptions
+```
 
+BenchmarkDotNet v0.13.12, Ubuntu 20.04.6 LTS (Focal Fossa)
+AMD EPYC 7763, 1 CPU, 2 logical cores and 1 physical core
+.NET SDK 7.0.306
+  [Host]     : .NET 7.0.9 (7.0.923.32018), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.9 (7.0.923.32018), X64 RyuJIT AVX2
+
+
+```
 | Method                      | Mean           | Error       | StdDev      | Median         |
 |---------------------------- |---------------:|------------:|------------:|---------------:|
 | CatchedExceptions           | 12,002.9480 ns | 282.5141 ns | 828.5650 ns | 11,950.8282 ns |

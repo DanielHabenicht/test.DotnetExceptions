@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>MyBenchmarks.ExceptionOrNot-20240125-205855</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.13.12, Ubuntu 20.04.6 LTS (Focal Fossa)
+AMD EPYC 7763, 1 CPU, 2 logical cores and 1 physical core
+.NET SDK 7.0.306
+  [Host]     : .NET 7.0.9 (7.0.923.32018), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.9 (7.0.923.32018), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method               </th><th>Mean    </th><th>Error</th><th>StdDev</th><th>Median  </th>
+</tr>
+</thead><tbody><tr><td>CatchedExceptions</td><td>12,002.9480 ns</td><td>282.5141 ns</td><td>828.5650 ns</td><td>11,950.8282 ns</td>
+</tr><tr><td>CatchedTestExceptionsLevel1</td><td>12,020.1168 ns</td><td>257.9380 ns</td><td>760.5362 ns</td><td>11,923.0727 ns</td>
+</tr><tr><td>CatchedTestExceptionsLevel2</td><td>12,138.8765 ns</td><td>283.0780 ns</td><td>830.2187 ns</td><td>11,934.5763 ns</td>
+</tr><tr><td>NoException</td><td>0.0785 ns</td><td>0.0342 ns</td><td>0.1007 ns</td><td>0.0265 ns</td>
+</tr></tbody></table>
+</body>
+</html>
